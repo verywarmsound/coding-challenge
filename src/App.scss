@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.employee-list {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #3a3f47;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #4a4f57;
+  border-radius: 5px;
+}
+
+.employee-item span {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.employee-item input {
+  font-size: 1.2em;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.employee-item .delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4b5c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.employee-item .delete-button:hover {
+  background-color: #ff1f3a;
+}
+
+.dependents-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.dependents-list li {
+  list-style-type: none;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dependents-list input {
+  font-size: 1em;
+  padding: 5px;
+  margin-top: 10px;
+  width: calc(100% - 120px); /* Adjust width to fit with button */
+}
+
+.dependents-list .add-dependent-button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dependents-list .add-dependent-button:hover {
+  background-color: #21a1f1;
+}
+
+.cost {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.add-employee-button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-employee-button:hover {
+  background-color: #21a1f1;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .App button {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .App button {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .App button {
+    font-size: 22px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .App button {
+    font-size: 24px;
+  }
+}
